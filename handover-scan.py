@@ -61,7 +61,7 @@ if __name__ == '__main__':
 
 		os.system('killall -9 iperf3')
 	#	os.system('killall -9 QLog')
-	if(sys.argv[1] == 'reset'):
+#	if(sys.argv[1] == 'reset'):
 	#	os.system('umount /home/work/young/ssd-mount')
 
 	#	os.system('./MRT-test.sh ramdiskfree')
