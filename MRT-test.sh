@@ -12,6 +12,7 @@ exp_init()
 	file="${file}`(date +%Y%m%d%H%M)`"
 	echo 'true' > enable
 	echo 'ATE0' > "$device"
+	echo 'AT+QNWPREFCFG="nsa_nr5g_band"' > "$device"
 	sleep 0.5
 	cat "$device" > $file &
 	echo 'AT' > "$device"
