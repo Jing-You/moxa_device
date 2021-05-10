@@ -16,7 +16,7 @@ exp_init()
 	cat "$device" > $file &
 	echo 'AT' > "$device"
 	sleep 0.5
-	mount -t ntfs-3g /dev/sda1 /home/work/young/ssd-mount
+	#mount -t ntfs-3g /dev/sda1 /home/work/young/ssd-mount
 }
 
 test1()
@@ -133,7 +133,7 @@ exp()
 			t_check=0
 			echo "$t_check"
 			echo "reset & checking"
-			check
+			#check
 		else
 			t_check=$((t_check+1))
 			echo "counting $t_check"

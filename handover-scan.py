@@ -52,7 +52,7 @@ if __name__ == '__main__':
 	#	os.system('/home/work/quectel/QLog -s /tmp/ramdisk')
 
 	if (sys.argv[1] == 'tcp'):
-		os.system('tcpdump net 140.112.20.182 -w tcpdump-files/tcp-file- -C 200M &')
+		os.system('tcpdump net 140.112.20.183 -w tcpdump-files/tcp-file-0509 &')
 
 	if(sys.argv[1] == 'stop'):
 		os.system('echo "false" > enable')
