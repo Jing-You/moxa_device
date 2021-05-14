@@ -8,7 +8,7 @@ exp_init()
 # time duration to check
 	t_check=0
 	t_up=10
-	file='log-at-'
+	file='./device_log/log-at-'
 	file="${file}`(date +%Y%m%d%H%M)`"
 	echo 'true' > enable
 	echo 'ATE0' > "$device"
