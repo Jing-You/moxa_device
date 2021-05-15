@@ -1,0 +1,31 @@
+iperf 3.1.3
+Linux cn9130 4.14.76-15.0.0+ #1 SMP PREEMPT Mon Jan 4 20:22:47 EST 2021 aarch64
+Time: Fri, 14 May 2021 12:30:36 GMT
+Connecting to host 140.112.20.183, port 3231
+Reverse mode, remote host 140.112.20.183 is sending
+      Cookie: cn9130.1620995435.977494.3ca91f48115
+[  5] local 10.112.74.60 port 50739 connected to 140.112.20.183 port 3231
+Starting Test: protocol: UDP, 1 streams, 8192 byte blocks, omitting 0 seconds, 7200 second test
+[ ID] Interval           Transfer     Bandwidth       Jitter    Lost/Total Datagrams
+[  5]   0.00-1.00   sec   136 KBytes  1.11 Mbits/sec  36074422728.572 ms  0/17 (0%)  
+[  5]   1.00-2.00   sec   128 KBytes  1.05 Mbits/sec  12845168706.588 ms  0/16 (0%)  
+[  5]   2.00-3.00   sec   120 KBytes   983 Kbits/sec  4878754431.046 ms  0/15 (0%)  
+[  5]   3.00-4.00   sec   136 KBytes  1.11 Mbits/sec  1628623353.247 ms  0/17 (0%)  
+[  5]   4.00-5.00   sec   128 KBytes  1.05 Mbits/sec  579910646.044 ms  0/16 (0%)  
+[  5]   5.00-6.00   sec   128 KBytes  1.05 Mbits/sec  206491181.281 ms  0/16 (0%)  
+[  5]   6.00-7.00   sec   128 KBytes  1.05 Mbits/sec  73526168.875 ms  0/16 (0%)  
+[  5]   7.00-8.00   sec   128 KBytes  1.05 Mbits/sec  26180768.182 ms  0/16 (0%)  
+[  5]   8.00-9.00   sec   128 KBytes  1.05 Mbits/sec  9322295.612 ms  0/16 (0%)  
+[  5]   9.00-10.00  sec   128 KBytes  1.05 Mbits/sec  3319430.506 ms  0/16 (0%)  
+[  5]  10.00-11.00  sec   128 KBytes  1.05 Mbits/sec  1181964.748 ms  0/16 (0%)  
+[  5]  11.00-12.00  sec   128 KBytes  1.05 Mbits/sec  420868.694 ms  0/16 (0%)  
+[  5]  12.00-13.00  sec   128 KBytes  1.05 Mbits/sec  149861.892 ms  0/16 (0%)  
+[  5]  13.00-14.00  sec   128 KBytes  1.05 Mbits/sec  53363.355 ms  0/16 (0%)  
+[  5]  14.00-14.49  sec  56.0 KBytes   928 Kbits/sec  33966.503 ms  0/7 (0%)  
+- - - - - - - - - - - - - - - - - - - - - - - - -
+Test Complete. Summary Results:
+[ ID] Interval           Transfer     Bandwidth       Jitter    Lost/Total Datagrams
+[  5]   0.00-14.49  sec  0.00 Bytes  0.00 bits/sec  33966.503 ms  0/232 (0%)  
+[  5] Sent 232 datagrams
+CPU Utilization: local/receiver 0.0% (0.0%u/0.0%s), remote/sender 0.0% (0.0%u/0.0%s)
+iperf3: interrupt - the client has terminated
