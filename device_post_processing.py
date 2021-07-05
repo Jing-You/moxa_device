@@ -1,6 +1,6 @@
 import pandas as pd
 
-f1name = "log-at-202105101910"
+f1name = "log-at-202105221637"
 # f1name = "log-at-202105091555"
 # log-at-
 f2name = "tmp3.csv"
@@ -27,6 +27,7 @@ with open(f1name) as f1:
     l3 = []
     while l:
         l = l.replace('\n', '')
+        # print(l)
         if "neighbourcell" not in l and '+QENG' in l and 'LTE' in l:
             """
                 In LTE mode: 
@@ -58,7 +59,7 @@ with open(f1name) as f1:
                 # print("LTE?", l)
                 l2 += l[2:]
                 earfcn = l[8]
-
+            # print(earfcn)
             # print("l2", l2)
         elif "neighbourcell" not in l in l and '+QENG' in l and 'NR5G-NSA' in l:
             """
@@ -100,16 +101,11 @@ with open(f1name) as f1:
             l = l.split(",")
 
             if "LTE" in l and earfcn == l[2]:
-                # print(l[1:])
-                # print("earfcn", earfcn, l[2], len(earfcn), len(l[2]))
                 l3.append(l[1])
                 l3.append(l[2])
                 l3.append(l[3])
                 l3.append(l[4])
                 l3.append(l[5])
-            # else:
-            # print(l)
-            #     print("warning: 5g or 3g?", l)
             
         elif "QLTS" in l:
             # print("-"*10)
@@ -122,8 +118,10 @@ with open(f1name) as f1:
             # print(ctime)
             # print(l2)
             if not is_5g:
-                l2 += [None] * 7
+                l2 += ['0'] * 7
             if len(l2):
+                # print("l2", l2)
+                # print("l3", l3)
                 f2.write(",".join(l2+l3)+"\n")
             l3 = []
             l2 = [ctime]
